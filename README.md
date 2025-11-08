@@ -5,3 +5,12 @@ Maybe the best way to build it for higher compatibility is to use an x86 system 
 ```
 GOOS=windows GOARCH=386 go build -ldflags="-s -w -H=windowsgui" -o filelocker-small.exe main.go
 ```
+if you want to generate private key and extract public key from it:
+
+```
+openssl genrsa -out private.pem 2048
+```
+
+```
+openssl rsa -in private.pem -pubout -out public.pem
+```
