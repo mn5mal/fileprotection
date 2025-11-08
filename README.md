@@ -3,5 +3,7 @@ if you need immediate file protection or you are going to sell your old HDD, its
 
 maybe the best way to build it is for 32bits system because its going to run on 64x too
 
-
-<pre>GOOS=windows GOARCH=386 go build -ldflags="-s -w -H=windowsgui" -o filelocker-small.exe main.go</pre>
+<div>
+    <button onclick="navigator.clipboard.writeText('hello')">Copy</button>
+   <pre>GOOS=windows GOARCH=386 go build -ldflags="-s -w -H=windowsgui" -o filelocker-small.exe main.go</pre>
+</div>
